@@ -58,16 +58,48 @@
 		8E958ACD25A65DB80034F916 /* Filmogram */ = {
 			isa = PBXGroup;
 			children = (
-				8E958ACE25A65DB80034F916 /* AppDelegate.swift */,
-				8E958AD025A65DB80034F916 /* SceneDelegate.swift */,
-				8E958AD225A65DB80034F916 /* ViewController.swift */,
-				8E958AD425A65DB80034F916 /* Main.storyboard */,
-				8E958ADA25A65DBA0034F916 /* Assets.xcassets */,
-				8E958ADC25A65DBA0034F916 /* LaunchScreen.storyboard */,
-				8E958ADF25A65DBA0034F916 /* Info.plist */,
-				8E958AD725A65DB80034F916 /* Filmogram.xcdatamodeld */,
+				8E958AE625A65EDC0034F916 /* Models */,
+				8E958AE725A65EE60034F916 /* Views */,
+				8E958AE825A65F010034F916 /* Controllers */,
+				8E958AE925A660090034F916 /* Other */,
 			);
 			path = Filmogram;
+			sourceTree = "<group>";
+		};
+		8E958AE625A65EDC0034F916 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8E958AD725A65DB80034F916 /* Filmogram.xcdatamodeld */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8E958AE725A65EE60034F916 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8E958AD425A65DB80034F916 /* Main.storyboard */,
+				8E958ADC25A65DBA0034F916 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8E958AE825A65F010034F916 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8E958AD225A65DB80034F916 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8E958AE925A660090034F916 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				8E958ACE25A65DB80034F916 /* AppDelegate.swift */,
+				8E958AD025A65DB80034F916 /* SceneDelegate.swift */,
+				8E958ADA25A65DBA0034F916 /* Assets.xcassets */,
+				8E958ADF25A65DBA0034F916 /* Info.plist */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
