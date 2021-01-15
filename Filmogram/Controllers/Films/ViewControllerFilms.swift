@@ -23,7 +23,7 @@ class ViewControllerFilms: UIViewController{
 
 // MARK: CollectionView -- DataSource, Delegate
 
-extension ViewControllerFilms: UICollectionViewDataSource, UICollectionViewDelegate{
+extension ViewControllerFilms: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 10
@@ -36,5 +36,9 @@ extension ViewControllerFilms: UICollectionViewDataSource, UICollectionViewDeleg
         
         return cell
         
+    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        return CGSize(width: collectionView.frame.width, height: collectionView.frame.height)
     }
 }

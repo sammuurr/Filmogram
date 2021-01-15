@@ -8,14 +8,28 @@
 import Foundation
 import UIKit
 
-struct Film {
+struct FilmStruckt {
     
     var name: String
-    var filmTime: Int?
-    var year: Int?
+    var filmTime: Float?
+    var releaseDate: Date?
     var countries: [String]?
     var posterImage: UIImage
     var janr: [String]?
     var deskription: String?
+    
+    var userLoadDate: Date
+    
+}
+
+class FilmData {
+    
+    func filmDataLoad() {
+        
+    }
+    
+    func filmDataUnload() {
+        
+    }
     
 }

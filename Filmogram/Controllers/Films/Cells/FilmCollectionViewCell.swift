@@ -11,18 +11,13 @@ class FilmCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet var tableView: UITableView!
     
-    
+    var films:Film?
 }
 
 // MARK: TableView -- DataSource, Delegate
 extension FilmCollectionViewCell: UITableViewDataSource, UITableViewDelegate {
     
-    func tableViewStartLoad() {
-        
-        tableView.delegate = self
-        tableView.dataSource = self
-        
-    }
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
@@ -30,8 +25,7 @@ extension FilmCollectionViewCell: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "filmTableView", for: indexPath)
-        
-        
+    
         return cell
     }
     

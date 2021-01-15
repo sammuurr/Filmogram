@@ -46,7 +46,7 @@
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="film" id="7kz-vR-GGZ" customClass="FilmCollectionViewCell" customModule="Filmogram" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="769"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="qUM-kO-0KK">
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="tKG-nb-xWT">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="769"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
@@ -63,7 +63,7 @@
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HFH-0v-ivP">
                                                                         <rect key="frame" x="20" y="11" width="144" height="178"/>
-                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                                         <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <userDefinedRuntimeAttributes>
                                                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -73,21 +73,21 @@
                                                                     </imageView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Venom" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kcf-Ol-coV">
                                                                         <rect key="frame" x="172" y="11" width="231" height="17"/>
-                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
                                                                         <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="20"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Год:  2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oeD-Hk-Yt1">
                                                                         <rect key="frame" x="172" y="84" width="222" height="33"/>
-                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Жанр(ы): ужасы фантастика триллеры романтика страшилка " textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gni-1m-NuR">
                                                                         <rect key="frame" x="172" y="125" width="232" height="21"/>
-                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
@@ -109,10 +109,10 @@
                                                 </tableView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="YRz-5X-sYV" firstAttribute="top" secondItem="qUM-kO-0KK" secondAttribute="top" id="D7u-Dg-Av0"/>
-                                                <constraint firstItem="YRz-5X-sYV" firstAttribute="leading" secondItem="qUM-kO-0KK" secondAttribute="leading" id="Nwa-4l-5iG"/>
-                                                <constraint firstAttribute="trailing" secondItem="YRz-5X-sYV" secondAttribute="trailing" id="l1S-JN-iS9"/>
-                                                <constraint firstAttribute="bottom" secondItem="YRz-5X-sYV" secondAttribute="bottom" id="wLX-Oe-lco"/>
+                                                <constraint firstItem="YRz-5X-sYV" firstAttribute="leading" secondItem="tKG-nb-xWT" secondAttribute="leading" id="Mdb-Ff-SKx"/>
+                                                <constraint firstAttribute="trailing" secondItem="YRz-5X-sYV" secondAttribute="trailing" id="VxP-N1-x4q"/>
+                                                <constraint firstItem="YRz-5X-sYV" firstAttribute="top" secondItem="tKG-nb-xWT" secondAttribute="top" id="cGF-pm-PEO"/>
+                                                <constraint firstAttribute="bottom" secondItem="YRz-5X-sYV" secondAttribute="bottom" id="yyW-XG-gK7"/>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
